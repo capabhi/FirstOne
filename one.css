@@ -1,0 +1,8 @@
+/* default */
+nav, header, footer{
+    display: block;
+}
+
+body{
+    background-color: linear-gradient(darkgreen,yellow);
+}

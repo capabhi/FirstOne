@@ -1,0 +1,315 @@
+/* ############## Default Setting #################*/
+nav, header, footer{
+    display:block;
+}
+
+body{
+    line-height: 1;
+    margin: 0;
+    background-color:linear-gradient(green,yellow);
+    
+}
+
+label{
+    font-size: 35px;
+    font-weight: 600;
+}
+
+
+p{
+    font-size: 20px;
+    line-height: 1.2;
+}
+
+article p{
+    font-size: 20px;
+    font-family: Oswald;
+    padding:10px;
+
+}
+
+.container{
+    width: 100;
+    margin:auto;
+    padding-top: 4%;
+    padding-bottom: 4%;
+    
+}
+
+.row{
+    width:100;
+display: flex;
+flex-wrap: wrap;
+align-items: center;
+}
+
+.row::after{
+    display:table;
+    clear:both;
+    content: "";
+}
+
+.col-1{ width: 8.33%;}
+.col-2{ width: 15.66%;}
+.col-3{ width: 25%;}
+.col-4{ width: 33.33%;}
+.col-5{ width: 41.66%;}
+.col-6{ width: 50%;}
+.col-7{ width: 58.33%;}
+.col-8{ width: 66.66%;}
+.col-9{ width: 75%;}
+.col-10{ width: 83.33%;}
+.col-11{ width: 91.66%;}
+.col-12{ width: 100%;}
+
+
+*{
+    box-sizing: border-box;
+}
+
+/* ################## Nav bar ##################### */
+nav{
+    width: 100;
+    margin:0;
+}
+
+nav ul{
+    background-color:bisque;
+    overflow:hidden;
+    margin:0;
+    padding:0;
+}
+
+nav ul.topnav li{
+    list-style:none;
+    float:left;
+}
+
+ul.topnav li.top_right{
+    float: right;
+    list-style: none;
+}
+
+ul.topnav li a{
+    display: block;
+    text-decoration: none;
+    min-height: 20px;
+    text-align: center;
+    padding: 14px;
+    text-transform: capitalize;
+    letter-spacing: 5px;
+    font-family: Raleway;
+    color:black;
+}
+ul.topnav li a:hover{
+    background-color: hotpink;
+    color: currentColor;
+}
+ul.topnav li.DropDownIcon{
+    display: none;
+}
+
+/* ------------------- Custom Style --------------------- */
+
+
+#section-1-gradient{
+   /* background: green;*/
+    background:-webkit- linear-gradient(pink, yellow); /*for safari*/
+    background: -o- linear-gradient(green,yellow); /*for opera*/
+    background: -moz- linear-gradient(green,yellow); /* for firefox*/
+    background: linear-gradient(pink, lightpink); /* Standard Syntax*/
+}
+
+
+div.box{
+    text-align: center;
+    margin: 24px;
+    border-radius: 7px;
+    padding: 35px 24px 40px 24px;
+    background-color:white;
+    box-shadow: 0 0 0 1px rgba(0,0,0,.15) , 0 2px 3px 0 rgba(0,0,0,.1);
+    
+}
+
+div.yotubeImage img{
+    display:block;
+    margin: auto;
+    box-shadow: -3px/*horizontal*/ -3px/*vertical*/ 3px/*blur*/ 3px/*spread*/ rgba(0/*shadow*/, 0/*background color*/, 0/*box color*/, .12/*opacity*/), 3px 3px 4px 4px rgba(1,1,1,.5);
+    
+}
+
+button{
+    font-size: 15px;
+    font-weight: 900;
+    color:black;
+    background-color:bisque;
+    padding: 15px 20px;
+    display: block;
+    text-align: center;
+    margin: 5px;
+    border-radius: 12px;
+}
+
+button.buttonclass{
+    display: block;
+    margin:auto;
+}
+
+div.icon{
+    width:100%;
+}
+
+
+div.leftside-col-6{
+    margin-left: 30%;
+    
+}
+
+div.rightside-col-6{
+    margin-left:5%;
+}
+
+h1.large{
+    color:brown;
+    margin:0;
+    line-height: 70px;
+    font-size: 56px;
+    font-family: Oswald;
+}
+
+h1.section2Header{
+    font-size:65px;
+    text-align: center;
+    font-family: Oswald;
+    letter-spacing: 2px;
+}
+
+
+form h2{
+    font-family: Oswald;
+    color:chocolate;
+}
+
+input[type="text"]{
+    font-size: 20px;
+    font-family: fantasy;
+    width: 400px;
+    min-width: 100px;
+    padding: 5px;
+    border-radius: 18px;
+}
+
+
+
+/*---------------------- footer --------------------------*/
+
+
+footer.footerClass{
+    background-color: #666;
+    padding-left: 10%;
+}
+
+footer.footerClass h1{
+    color: white;
+}
+
+footer.footerClass ul{
+    list-style:  none;
+    text-align: left;
+    padding-left: 0;
+}
+
+footer.footerClass ul li{
+    color: beige;
+    font-size: 24px;
+    line-height: 1.4;
+}
+
+
+
+
+/* ------------------ Mobile Comparitable ---------------------*/
+
+@media screen and (max-width: 700px){
+    ul.topnav li:not(:nth-child(1)){
+        display: none;
+    }
+    
+    ul.topnav li.DropDownIcon{
+        display: block;
+        float: right;
+    }
+    
+    ul.topnav.responsive li.DropDownIcon{
+        position: absolute;
+        top: 0;
+        right: 0;
+        
+    }
+    ul.topnav.responsive{
+        position: relative;
+    }
+    
+    ul.topnav.responsive li{
+        display: inline;
+        float: none;
+    }
+    
+    ul.topnav.responsive li a{
+        display: block;
+        text-align: left;
+    }
+    
+    .col-5,.col-6, .c0l-7, .col-4{
+        width: 100%;
+        margin: 0;
+    }
+    
+    div.mobilestack{
+        width: 50%;
+        display: block;
+    }
+    
+    
+    h1.section2Header
+    {
+        font-size: 45px;
+    }
+    
+    article p{
+        font-size:20px;
+    }
+    
+    
+    div.box{
+    display: block;
+    padding: 5px;
+    
+    }
+    
+    div.yotubeImage{
+        margin: 10px;
+    }
+    
+    
+    div.yotubeImage img{
+        width: 100;
+    }
+    
+    div.leftside-col-6, div.rightside-col-6{
+        margin: 15px;
+    }
+    
+    input[type="text"]{
+        width:300px;
+    }
+    
+    .videoContainer iframe{
+        position: relative;
+        width: 100%;
+        margin: 0;
+        overflow: hidden;
+    }
+}
+
+
