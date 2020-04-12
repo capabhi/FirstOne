@@ -1,3 +1,3 @@
 //hello frnds
-var x=document.getElementById;
-
+var x=document.getElementById('y');
+var y = document.getElementById('x');
